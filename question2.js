@@ -26,7 +26,7 @@ const cart = [
 
 function totalCost(cart) {
     const subTotal = cart.reduce((total, item) => {
-        return total + item.price * item.quantity  //used reduce() to calculate total which is cost of one multiplited with quantity
+        return total + item.price * item.quantity  //used reduce() to calculate total which is cost of one multiplied with quantity
     }, 0)
 
     const discount = subTotal > 100 ? subTotal * 0.1 : 0;
